@@ -27,3 +27,20 @@ It it will query a service that runs in `localhost:3040`
             "total": 20
         }
     }
+    
+### How to run it
+Python version used 3.7.2
+
+1. Run `docker-compose up`
+2. Recommended create a virtual environment, eg: `python3 -m venv ~/venv`
+3. Activate virtual env, eg: `source ~/venv/bin/activate`
+4. Install requirements `pip install -r requirements.txt`
+5. Run app `python main.py`, app opened in http://localhost:5000
+6. Run tests `python test_movies.py`
+
+
+#### load testing
+1. Activated virtual env
+2. App running
+3. `locust --host=http://localhost:5000 -f test_performance.py`
+4. Open browser http://localhost:8089
