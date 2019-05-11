@@ -1,0 +1,4 @@
+.idea/
+__pycache__/
+flask-movie.iml
+*incorrect.json
