@@ -1,4 +1,5 @@
-# Acceptance Criteria
+# Purpose
+Understand Flask
 
 ### Request
 Service with a REST Endpoint to search for movies using genre as query parameter, as:
@@ -7,9 +8,9 @@ Service with a REST Endpoint to search for movies using genre as query parameter
 
 `genre`: Genres are provided as a static resource in the genres.json file.
 
-`offset`: Provides the starting index for the search results. Default is 0, if not specified.
+`offset`: Starting index for the search results. Default is 0, if not specified.
 
-`limit`: Provides the number of result returned per page. Default is 10 if not specified.
+`limit`: Number of results returned per page. Default is 10 if not specified.
 
 It it will query a service that runs in `localhost:3040`
 
@@ -31,7 +32,7 @@ It it will query a service that runs in `localhost:3040`
 ### How to run it
 Python version used 3.7.2
 
-1. Run `docker-compose up`
+1. Run movie services in `localhost:3040`
 2. Recommended create a virtual environment, eg: `python3 -m venv ~/venv`
 3. Activate virtual env, eg: `source ~/venv/bin/activate`
 4. Install requirements `pip install -r requirements.txt`
